@@ -60,6 +60,10 @@ public class MathApplicationTest {
 		when(calcService.multiply(20.0,10.0)).thenReturn(200.00);
 		//test the multiply functionality
 		Assert.assertEquals(mathApplication.multiply(20.0, 10.0),200.0,0.0);
+		
+		when(calcService.multiply(0.0,10.0)).thenReturn(0.00);
+		//test the multiply functionality
+		Assert.assertEquals(mathApplication.multiply(0.0, 10.0),200.0,0.0);
 	}
 	
 	@Test
